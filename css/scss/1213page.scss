@@ -1,0 +1,57 @@
+@import url('reset.css');
+@import 'common';
+
+//섹션1 시작
+.section01{
+    margin-top: 30px;
+    img{
+        width:100%;
+        
+    }
+}
+//섹션1끝
+//섹션2 시작
+.section02{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section02_main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+}
+.section02_sub{
+    p{
+        padding:10px;
+        img{
+            width:100%;
+        }
+    }
+}
+//섹션2 끝
+
+
+//미디어작업 시작
+
+
+@media screen and (max-width:767px){
+
+    .section01 >img{
+        width:100%;
+        height:82vh;
+        object-fit: cover;
+    }
+    .header02, .section02 {
+        display:none !important;
+    }
+    .mobile_header{
+
+    }
+
+}

@@ -1,0 +1,147 @@
+
+
+//이 위는 버거메뉴 버튼
+
+.bugger_menu {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 300px;
+    border: 1px solid black;
+    display: none;
+    z-index: 5;
+    
+    background-color: skyblue;
+    p {
+        height: 60px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    #close_bugger{
+        justify-content: right;
+        img{
+            margin-right: 20px;
+        }
+    }
+    .bugger_img {
+        display: flex;
+        justify-content: space-evenly;
+        p{
+            background-color: pink;
+            width: 100%;
+        }
+    }
+}
+// 여기까지 버거메뉴
+//서치 시작
+.search_menu {
+    width: 100%;
+    display:flex;
+    transform: translateY(-100%);
+    input {
+        width:100%;
+        text-align: center;
+        background-color: aqua;
+    }
+
+    
+}
+
+//서치끝
+//헤더시작
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px 0 20px;
+    .header01 {
+        text-align: center;
+        
+        nav {
+            display: flex;
+            a {
+                margin: 0 10px;
+            }
+        }
+    }
+    .header02 {
+        display: flex;
+        a {
+            margin: 0 10px;
+        }
+    }
+}
+//헤더끝
+
+//풋터시작
+.footer01{
+    display:flex;
+    background-color: #D9D9D9;
+    border-top:1px solid black;
+    align-items: center;
+    
+    font-size: 0.4rem;
+    b{
+        font-size: 0.5rem;
+        padding:10px;
+        margin-left:10%;
+    }
+    a{
+        margin: 0 10px;
+    }
+}
+.footer02{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:10%;
+    margin-right:10%;
+}
+.footer02_sub01{
+    font-size: 0.4rem;
+}
+.footer02_sub02>a{
+    margin: 0 5px;
+}
+//풋터끝
+
+//이 밑으로 미디어작업
+.mobile_header{
+    display :flex !important;
+    align-items: center;
+    justify-content: space-between;
+    display: none !important;
+    margin-top:-30px !important; 
+    
+}
+.mobile_footer{
+    background-color: #B5B5B5;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    h3{font-size:20px;}
+    p{font-size:17px;}
+    
+}
+
+@media screen and (max-width:767px){
+    .mobile_header{
+        display: flex !important;
+        margin-left: 20px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 0.5rem;
+    }
+    footer,header{
+        display:none !important;
+    }
+    .mobile_footer{
+        display:block;
+    }
+    .bugger_btn{
+        display: flex ;
+    }
+}

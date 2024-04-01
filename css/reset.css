@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap');
+
+/* reset.css */
+html, body{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 22px;
+    margin: 0px;
+}
+
+h1,h2,h3,p,figure,dl,dt,dd{margin:0;}         
+ul,li{list-style: none; margin:0; padding:0;}  /*ul li 앞에모양없애줌*/
+a{color:#333; text-decoration: none;}   /* a 글자색검정색, 밑줄없애줌 */
+img{vertical-align: middle;}         
+table{border-collapse:collapse;}      
+*{box-sizing: border-box;}            
