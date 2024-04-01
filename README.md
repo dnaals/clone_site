@@ -17,7 +17,7 @@
 
 **배포링크 : <a href="https://dnaals.github.io/clone_site/" target="_blank">https://dnaals.github.io/clone_site/</a>**
 
-## 🌈 담당 Page 주요기능
+## 🌈 주요기능
 <ul>
   <li>사이트 clone</li>
   <li>반응형 작업</li>
