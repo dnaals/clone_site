@@ -8,7 +8,28 @@ main{
     justify-content: center;
     background-color: black;
     color: white;
+    position: relative;
+    .detail_box1{
+        display:none;
+        &.active{
+            display:block;
+            background-color: rgba(161, 161, 161, 0.7);
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0;
+        .detail{
+            width:100%;
+            margin-top: 30%;
+            img{
+                width:100%;
+            }
+        }
+    }
+    }
     .main01{
+        
+        
         padding-top: 60px;
         margin :20px 0 ;
         font-size: 0.7rem;
@@ -18,7 +39,7 @@ main{
             margin-top: 20px;
         }
         p img{width:70%;}
-        a{
+        button{
             font-size: 0.5rem;
             background-color: white;
             color: black;

@@ -2,6 +2,28 @@ const buggerBtn = document.querySelector('.bugger_btn');
 const buggerMenu = document.querySelector('.bugger_menu');
 const searchMenu = document.querySelector('.search_menu');
 const searchBtn = document.querySelectorAll('.search');
+const detailBtn = document.querySelectorAll('.main01>button');
+const detailImg = document.querySelectorAll('.detail_box1');
+
+detailBtn.forEach(function(obj,key){
+    // console.log(obj)
+    obj.onclick = ()=>{
+        // if(key==0){
+        //     detailImg.className='detail_box1 active';
+        // }
+        detailImg.forEach(function(obj2,key2){
+            if(key==key2){
+                obj2.className='detail_box1 active';
+            }
+        })
+    }
+})
+
+detailImg.forEach(function(obj,key){
+    obj.onclick=()=>{
+        obj.className='detail_box1';
+    }
+})
 
 buggerBtn.onclick = function(){
     buggerMenu.style.display="block";
